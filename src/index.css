@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background: linear-gradient(135deg, #FFB6C1, #FFFACD, #98FF98, #E6E6FA);
+  height: 100vh; 
+  margin: 0; /* Remove default margin */
+  font-family: Arial, sans-serif; /* Optional: Set a font */
+}
