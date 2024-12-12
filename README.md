@@ -14,6 +14,10 @@ Install ICE_-FY with npm
 ```bash
   npm Install
 ```
+To run the Project
+```bash
+  npm run dev
+```
 and goto context file and change according to your data specs
 
 ## Enjoy the Site Thanks for Visiting Don't forget to star 🌟 the repo ☺ 
