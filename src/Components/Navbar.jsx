@@ -1,5 +1,7 @@
 import React, { useState } from "react";
-import logo from "../assets/newset-logo.png";
+import logo from "../assets/logo.svg";
+import { SiHomeassistantcommunitystore } from "react-icons/si";
+import { MdRestaurantMenu, MdMessage, MdContactPhone } from "react-icons/md";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -9,21 +11,22 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-pink-200 shadow-md w-full">
+    <nav className="bg-pink-200  shadow-md w-full">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <div className="flex-shrink-0">
             <img
               src={logo}
               alt="Logo"
-              className="h-12 w-12 rounded-full object-cover"
+              href="#home"
+              className=" w-36 h-36 rounded-full object-cover"
             />
           </div>
 
           <div className="flex sm:hidden">
             <button
               onClick={toggleMenu}
-              className="text-pink-400 focus:outline-none"
+              className="text-crimsonRed focus:outline-none"
               aria-expanded={isMenuOpen}
             >
               <i
@@ -37,27 +40,39 @@ const Navbar = () => {
           <div className="hidden sm:flex sm:items-center sm:gap-8">
             <a
               href="#home"
-              className="text-pink-400 font-bold hover:text-blue-400   transition duration-300"
+              className="text-crimsonRed font-bold hover:text-pink-500   transition duration-300"
             >
-              Home
+              <div className="flex">
+                <SiHomeassistantcommunitystore className="mt-1" />
+                &nbsp;Home
+              </div>
             </a>
             <a
               href="#menu"
-              className="text-pink-400 font-bold hover:text-blue-400   transition duration-300"
+              className="text-crimsonRed font-bold hover:text-pink-500   transition duration-300"
             >
-              Menu
+              <div className="flex">
+                <MdRestaurantMenu className="mt-1" />
+                &nbsp;Menu
+              </div>
             </a>
             <a
               href="#about"
-              className="text-pink-400 font-bold hover:text-blue-400   transition duration-300"
+              className="text-crimsonRed font-bold hover:text-pink-500   transition duration-300"
             >
-              About Us
+              <div className="flex">
+                <MdMessage className="mt-1 " />
+                &nbsp;About
+              </div>
             </a>
             <a
               href="#contact"
-              className="text-pink-400 font-bold hover:text-blue-400 transition duration-300"
+              className="text-crimsonRed font-bold hover:text-pink-500 transition duration-300"
             >
-              Contact
+              <div className="flex">
+                <MdContactPhone className="mt-1 " />
+                &nbsp;Contact
+              </div>
             </a>
           </div>
         </div>
@@ -68,30 +83,42 @@ const Navbar = () => {
           isMenuOpen ? "block" : "hidden"
         }`}
       >
-        <div className="bg-pink-200 px-4 py-2 space-y-2">
+        <div className="bg-transparent px-4 py-2 space-y-2  ">
           <a
             href="#home"
-            className="block text-pink-400 font-bold hover:text-blue-400  transition duration-300"
+            className="text-crimsonRed font-bold hover:text-pink-500   transition duration-300"
           >
-            Home
+            <div className="flex">
+              <SiHomeassistantcommunitystore className="mt-1" />
+              &nbsp;Home
+            </div>
           </a>
           <a
             href="#menu"
-            className="block text-pink-400 font-bold hover:text-blue-400   transition duration-300"
+            className="text-crimsonRed font-bold hover:text-pink-500   transition duration-300"
           >
-            Menu
+            <div className="flex">
+              <MdRestaurantMenu className="mt-1" />
+              &nbsp;Menu
+            </div>
           </a>
           <a
             href="#about"
-            className="block text-pink-400 font-bold hover:text-blue-400   transition duration-300"
+            className="text-crimsonRed font-bold hover:text-pink-500   transition duration-300"
           >
-            About Us
+            <div className="flex">
+              <MdMessage className="mt-1 " />
+              &nbsp;About
+            </div>
           </a>
           <a
             href="#contact"
-            className="block text-pink-400 font-bold hover:text-blue-400   transition duration-300"
+            className="text-crimsonRed font-bold hover:text-pink-500 transition duration-300"
           >
-            Contact
+            <div className="flex">
+              <MdContactPhone className="mt-1 " />
+              &nbsp;Contact
+            </div>
           </a>
         </div>
       </div>
