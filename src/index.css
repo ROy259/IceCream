@@ -3,8 +3,8 @@
 @tailwind utilities;
 
 body {
-  background: linear-gradient(135deg, #FFB6C1, #FFFACD, #98FF98, #E6E6FA);
+  background:#F5DADF;
   height: 100vh; 
-  margin: 0; /* Remove default margin */
-  font-family: Arial, sans-serif; /* Optional: Set a font */
+  margin: 0; 
+  font-family: Arial, sans-serif;
 }
