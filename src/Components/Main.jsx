@@ -3,6 +3,7 @@ import Navbar from './Navbar'
 import Home from './Home'
 import Menu from './Menu'
 import Abou_us from './Abou_us'
+import Contact from './Contact'
 
 const Main = () => {
   return (
@@ -11,6 +12,7 @@ const Main = () => {
       <Home/>
       <Menu/>
       <Abou_us/>
+      
     </div>
   )
 }
