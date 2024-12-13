@@ -4,7 +4,7 @@ const Menu = () => {
   const { cartItems } = useCart();
   return (
     <>
-      <div className='main-container '>
+      <div className='main-container bg-slate-200 pb-5'>
 
         <div className='my-3'>
             <h1 className='text-[#EC4899] text-4xl font-bold text-center bg-white'>Our Flavors</h1>
@@ -13,7 +13,7 @@ const Menu = () => {
           {
             cartItems.map((item)=>{
               return(
-                <div className='image-content flex flex-col sm:h-auto sm:w-[360px] justify-center items-center rounded-lg gap-3 mx-5 p-5 bg-white'>
+                <div className='image-content flex flex-col shadow-lg sm:h-auto sm:w-[360px] justify-center items-center rounded-lg gap-3 mx-5 p-5 bg-white'>
                 <div key={item.id} className='img'>
                   <img src={item.image} alt="item1" className='h-[300px] w-[300px] rounded-lg' />
                 </div>
