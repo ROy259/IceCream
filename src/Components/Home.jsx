@@ -16,7 +16,6 @@ const Home = () => {
     <h6 className="sm:text-base text-red-700 text-sm">
       The best ice cream in town with a variety of flavors to choose from!
     </h6>
-    <div>hi</div>
   </div>
 </div>
      
