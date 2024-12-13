@@ -12,7 +12,7 @@ const Main = () => {
       <Home/>
       <Menu/>
       <Abou_us/>
-      
+      <Contact/>
     </div>
   )
 }
