@@ -138,7 +138,7 @@ import caramel from "../assets/ice-caramel.png";
 export default function Try() {
   return (
     <>
-      <div className="h-screen">
+      <div className="">
         <h1 className="font-pacifico text-center text-5xl mt-5 text-crimsonRed">
           Ice-cream flavors
         </h1>
