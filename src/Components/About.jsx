@@ -3,7 +3,7 @@ import about from '../assets/ice-about.png'
 
 const About = () => {
   return (
-    <div className="p-8 text-center mt-5">
+    <div className="p-8 text-center mt-5  ">
       <h1 className="text-4xl font-pacifico text-crimsonRed">About Us</h1>
       <div className="sm:flex gap-10 mt-5 justify-center ">
         
