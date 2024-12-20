@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import logo from "../assets/logo.svg";
 import { SiHomeassistantcommunitystore } from "react-icons/si";
 import { MdRestaurantMenu, MdMessage, MdContactPhone } from "react-icons/md";
+import { HashLink as Link } from 'react-router-hash-link';
+
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -56,8 +58,9 @@ const Navbar = () => {
                 &nbsp;Menu
               </div>
             </a>
+           
             <a
-              href="#about"
+              href="#about" 
               className="text-crimsonRed font-bold hover:text-pink-500   transition duration-300"
             >
               <div className="flex">
